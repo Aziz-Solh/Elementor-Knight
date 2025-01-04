@@ -6,37 +6,7 @@ body {
     color: white;
     background: linear-gradient(to bottom, #1a1a1a, #333333); /* تدرج لوني داكن */
 }
-.container {
-    max-width: 1200px; /* الحد الأقصى لعرض المحتوى */
-    margin: 0 auto;
-    padding: 20px;
-}
 
-/* تصميم مخصص للأجهزة اللوحية (عرض أقل من 768px) */
-@media (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
-
-    .buttons {
-        flex-direction: column; /* جعل الأزرار في عمود */
-    }
-
-    .platform-btn {
-        width: 100%; /* جعل الأزرار بعرض كامل */
-    }
-}
-
-/* تصميم مخصص للهواتف الذكية (عرض أقل من 480px) */
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.5rem; /* تقليل حجم النص */
-    }
-
-    .platform-btn {
-        font-size: 0.8rem; /* تصغير الأزرار */
-    }
-}
 h1, h2, p {
     margin: 0;
 }
