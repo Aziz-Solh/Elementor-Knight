@@ -1,12 +1,42 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Carter One', sans-serif;
     margin: 0;
     padding: 0;
     color: white;
     background: linear-gradient(to bottom, #1a1a1a, #333333); /* تدرج لوني داكن */
 }
+.container {
+    max-width: 1200px; /* الحد الأقصى لعرض المحتوى */
+    margin: 0 auto;
+    padding: 20px;
+}
 
+/* تصميم مخصص للأجهزة اللوحية (عرض أقل من 768px) */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .buttons {
+        flex-direction: column; /* جعل الأزرار في عمود */
+    }
+
+    .platform-btn {
+        width: 100%; /* جعل الأزرار بعرض كامل */
+    }
+}
+
+/* تصميم مخصص للهواتف الذكية (عرض أقل من 480px) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; /* تقليل حجم النص */
+    }
+
+    .platform-btn {
+        font-size: 0.8rem; /* تصغير الأزرار */
+    }
+}
 h1, h2, p {
     margin: 0;
 }
@@ -45,17 +75,26 @@ button, a {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1.5px;
+    font-family: 'Carter One', sans-serif;
+
 }
 
 .description {
+    margin-top: 50px; 
+
+    max-width: 800px; /* يحدد أقصى عرض للنص */
+    color: #ffffff; /* لون النص */
+    font-weight: bold;
+
     font-size: 1.5rem;
     margin-bottom: 20px;
     line-height: 1.5;
+    font-family: 'Carter One', sans-serif;
+
 }
 
 .buttons {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* تقسيم الأزرار إلى عمودين */
     gap: 20px; /* الفجوة بين الأزرار */
     justify-items: center; /* محاذاة الأزرار في المنتصف */
     margin-top: 30px; /* إضافة المسافة من الأعلى */
@@ -65,7 +104,7 @@ button, a {
 }
 
 .platform-btn {
-    width: 400px; /* عرض الزر */
+    width: 600px; /* عرض الزر */
     height: 100px; /* ارتفاع الزر */
     display: flex;
     justify-content: center; /* محاذاة النص أفقيًا في المنتصف */
@@ -73,7 +112,7 @@ button, a {
     font-size: 2.3rem; /* حجم النص */
     font-family: 'Carter One', sans-serif;
     font-weight: normal;
-    background-color: #bb9f00; /* لون الخلفية */
+    background-color: #cfb000; /* لون الخلفية */
     color: white; /* لون النص */
     border-radius: 5px; /* حواف دائرية بسيطة */
     border: none; /* إزالة الحدود */
@@ -93,18 +132,22 @@ button, a {
 
 
 .video-section {
+
     text-align: center;
     padding: 60px 20px;
     background-color: transparent;
 }
 
 .video-section h2 {
+    margin-top: 150px; /* يضيف فراغ بمقدار 50 بكسل أعلى الموقع */
+
     font-size: 3rem;
     margin-bottom: 30px;
     color: white;
 }
 
 .video-container {
+
     position: relative;
     width: 100%; /* عرض الفيديو يكون 100% من العنصر الأب */
     max-width: 900px; /* تحديد الحد الأقصى للعرض */
@@ -129,12 +172,16 @@ button, a {
     color: white;
     padding: 50px 0;
     text-align: center;
+    font-family: 'Carter One', sans-serif;
+
 }
 
 .follow-section h2 {
     font-size: 2.5rem;
     margin-bottom: 10px;
     letter-spacing: 2px;
+    font-family: 'Carter One', sans-serif;
+
 }
 
 .social-media {
@@ -142,6 +189,8 @@ button, a {
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
+    font-family: 'Carter One', sans-serif;
+
 }
 
 .social-icon {
@@ -156,8 +205,7 @@ button, a {
 }
 
 .social-icon:hover {
-    color: #00a31b;
-    background-color: rgba(0, 163, 27, 0.1);
+    color: #cfb000;
 }
 
 /* Footer */
