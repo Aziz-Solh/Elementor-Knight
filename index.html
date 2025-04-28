@@ -2,48 +2,91 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elementor Knight</title>
-    <meta name="description" content="Unleash powers and reclaim elemental stones in this epic offline platformer!.">
-    <link rel="stylesheet" href="styles.css">
+    <!---- جهاز واحد للعرض (أزلنا التكرار) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- عناوين -->
+    <title>Elementor Knight – Out Now!</title>
+    <meta name="description" content="Embark on an epic offline platform-adventure, reclaim the elemental stones, and restore balance.">
+
+    <!-- Open Graph + Twitter -->
+    <meta property="og:type"        content="website">
+    <meta property="og:title"       content="Elementor Knight – Out Now!">
+    <meta property="og:description" content="Embark on an epic offline platform-adventure and reclaim the elemental stones.">
+<!-- index.html -->
+<meta property="og:image" content="images/og-image.webp">
+    <meta property="og:url"         content="https://your-domain.com">
+
+    <!-- خطوط -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- أنماط -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- أيقونة -->
     <link rel="icon" type="image/png" href="favicon.png">
-
-
 </head>
+
 <body class="custom-body">
-    <div class="video-section">
-        <h2> </h2>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/some-video-id" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </div>
+    <!---- HERO -->
     <header class="hero-section">
         <div class="content-wrapper">
-            <h1 class="title">Out now!</h1>
-            <div class="buttons">
-                <a href="https://play.google.com/store/apps/details?id=com.AASGO.ElementorKnight" class="platform-btn">Get it on Google Play</a>             
-            </div>
-            <p class="description">Embark on an epic journey in Elementor Knight, an offline adventure platformer game where courage meets strategy! Step into the shoes of a young hero from a destroyed village, on a mission to reclaim elemental stones and restore balance to the world.</p>
+            <h1 class="title">Out Now!</h1>
 
+            <a href="https://play.google.com/store/apps/details?id=com.AASGO.ElementorKnight"
+               class="platform-btn"
+               role="button"
+               aria-label="Download Elementor Knight from Google Play">
+                Get it on Google Play
+            </a>
+
+            <p class="description">
+                Unleash elemental powers, slash fierce bosses, and master challenging platforming—all <strong>offline</strong>.
+                Download <strong>Elementor Knight</strong> now and restore balance to a world torn apart!
+            </p>
+            
         </div>
     </header>
 
-   
-
-    <div class="follow-section">
-        <h2>Follow us</h2>
-        <p>Follow @tunicgame on Social Media</p>
-        <div class="social-media">
-            <a href="https://twitter.com/tunicgame" class="social-icon">Twitter</a>
-            <a href="https://discord.gg/tunicgame" class="social-icon">Discord</a>
-            <a href="mailto:contact@tunicgame.com" class="social-icon">Email</a>
+    <!---- VIDEO -->
+    <section class="video-section" aria-labelledby="trailer">
+        <h2 id="trailer" class="sr-only">Gameplay Trailer</h2>
+        <div class="video-container">
+            <iframe
+                src="https://www.youtube.com/embed/EOQF_Iul4qA"
+                title="Elementor Knight Gameplay Trailer"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
         </div>
-        <p>General Contact | Press Contact</p>
-        <p>© 2025 Elementor Knight. All rights reserved.</p>
-    </div>
+    </section>
 
-  
+    <!---- FOLLOW -->
+    <section class="follow-section">
+        <h2>Follow Us</h2>
+        <p>Stay connected with Elementor Knight</p>
+
+        <nav class="social-media" aria-label="Social links">
+            <a href="https://x.com/KnightGame80666"
+               class="social-icon"
+               aria-label="Follow us on X (Twitter)">Twitter</a>
+
+            <a href="https://discord.gg/kckCyRdvyB"
+               class="social-icon"
+               aria-label="Join our Discord server">Discord</a>
+
+            <a href="mailto:elementotknight@gmail.com"
+               class="social-icon"
+               aria-label="Send us an email">Email</a>
+        </nav>
+
+        <p>© 2025 Elementor Knight. All rights reserved.</p>
+    </section>
+
+    <!-- سكربتات -->
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js" defer></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js" defer></script>
+    <script src="scripts.js" defer></script>
 </body>
 </html>
