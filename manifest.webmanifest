@@ -1,0 +1,16 @@
+{
+    "name": "Elementor Knight",
+    "short_name": "E-Knight",
+    "description": "Offline platform-adventure. Unleash elemental powers and reclaim the stones!",
+    "start_url": "/Elementor-Knight/",
+    "scope": "/Elementor-Knight/",
+    "display": "standalone",
+    "background_color": "#1a1a1a",
+    "theme_color": "#cfb000",
+    "icons": [
+      { "src": "favicon.png",        "sizes": "64x64 32x32 24x24 16x16", "type": "image/png" },
+      { "src": "favicon.png", "sizes": "192x192",                 "type": "image/png" },
+      { "src": "favicon.png", "sizes": "512x512",                 "type": "image/png" }
+    ]
+  }
+  

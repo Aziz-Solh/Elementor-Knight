@@ -1,92 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <!---- جهاز واحد للعرض (أزلنا التكرار) -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elementor Knight – Out Now!</title>
 
-    <!-- عناوين -->
-    <title>Elementor Knight – Out Now!</title>
-    <meta name="description" content="Embark on an epic offline platform-adventure, reclaim the elemental stones, and restore balance.">
+  <!-- SEO / Social -->
+  <meta name="description" content="Unleash elemental powers, slash fierce bosses, and master challenging platforming—all offline. Download Elementor Knight now!">
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Elementor Knight – Out Now!">
+  <meta property="og:description" content="Unleash elemental powers, slash fierce bosses, and master challenging platforming—all offline.">
+  <meta property="og:image"       content="images/og-image.webp">
+  <meta property="og:image:alt"   content="Elementor Knight key-art">
+  <meta property="og:url"         content="https://aziz-solh.github.io/Elementor-Knight/">
+  <meta name="twitter:card"       content="summary_large_image">
 
-    <!-- Open Graph + Twitter -->
-    <meta property="og:type"        content="website">
-    <meta property="og:title"       content="Elementor Knight – Out Now!">
-    <meta property="og:description" content="Embark on an epic offline platform-adventure and reclaim the elemental stones.">
-<!-- index.html -->
-<meta property="og:image" content="images/og-image.webp">
-    <meta property="og:url"         content="https://your-domain.com">
+  <!-- Fonts & Styles -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 
-    <!-- خطوط -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#cfb000">
 
-    <!-- أنماط -->
-    <link rel="stylesheet" href="styles.css">
-
-    <!-- أيقونة -->
-    <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/png" href="favicon.png">
 </head>
-
 <body class="custom-body">
-    <!---- HERO -->
-    <header class="hero-section">
-        <div class="content-wrapper">
-            <h1 class="title">Out Now!</h1>
 
-            <a href="https://play.google.com/store/apps/details?id=com.AASGO.ElementorKnight"
-               class="platform-btn"
-               role="button"
-               aria-label="Download Elementor Knight from Google Play">
-                Get it on Google Play
-            </a>
+  <!-- HERO -->
+  <header class="hero-section">
+    <div class="content-wrapper">
+      <h1 class="title">Out Now!</h1>
 
-            <p class="description">
-                Unleash elemental powers, slash fierce bosses, and master challenging platforming—all <strong>offline</strong>.
-                Download <strong>Elementor Knight</strong> now and restore balance to a world torn apart!
-            </p>
-            
-        </div>
-    </header>
+      <a href="https://play.google.com/store/apps/details?id=com.AASGO.ElementorKnight"
+         class="platform-btn"
+         aria-label="Download Elementor Knight from Google Play">
+        Get it on Google Play
+      </a>
 
-    <!---- VIDEO -->
-    <section class="video-section" aria-labelledby="trailer">
-        <h2 id="trailer" class="sr-only">Gameplay Trailer</h2>
-        <div class="video-container">
-            <iframe
-                src="https://www.youtube.com/embed/EOQF_Iul4qA"
-                title="Elementor Knight Gameplay Trailer"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </div>
-    </section>
+      <p class="description">
+        Unleash elemental powers, slash fierce bosses, and master challenging platforming—all <strong>offline</strong>.
+        Download <strong>Elementor Knight</strong> now and restore balance to a world torn apart!
+      </p>
+    </div>
+  </header>
 
-    <!---- FOLLOW -->
-    <section class="follow-section">
-        <h2>Follow Us</h2>
-        <p>Stay connected with Elementor Knight</p>
+  <!-- TRAILER -->
+  <section class="video-section" aria-labelledby="trailer">
+    <h2 id="trailer" class="sr-only">Gameplay Trailer</h2>
 
-        <nav class="social-media" aria-label="Social links">
-            <a href="https://x.com/KnightGame80666"
-               class="social-icon"
-               aria-label="Follow us on X (Twitter)">Twitter</a>
+    <!-- Lazy-load thumbnail -->
+    <div class="video-placeholder" onclick="loadTrailer()">
+      <picture>
+        <source srcset="images/trailer.webp" type="image/webp">
+        <img src="images/trailer.jpg" alt="Elementor Knight trailer cover">
+      </picture>
+      <button class="play-btn" aria-label="Play trailer">▶</button>
+    </div>
+  </section>
 
-            <a href="https://discord.gg/kckCyRdvyB"
-               class="social-icon"
-               aria-label="Join our Discord server">Discord</a>
+  <!-- FOLLOW -->
+  <section class="follow-section">
+    <h2>Follow Us</h2>
+    <p>Stay connected with Elementor Knight</p>
 
-            <a href="mailto:elementotknight@gmail.com"
-               class="social-icon"
-               aria-label="Send us an email">Email</a>
-        </nav>
+    <nav class="social-media" aria-label="Social links">
+      <a href="https://x.com/KnightGame80666" class="social-icon" aria-label="Twitter">Twitter</a>
+      <a href="https://discord.gg/kckCyRdvyB" class="social-icon" aria-label="Discord">Discord</a>
+      <a href="mailto:elementorknight@gmail.com?subject=Elementor%20Knight%20Support"
+         class="social-icon" aria-label="Email us">Email</a>
+    </nav>
 
-        <p>© 2025 Elementor Knight. All rights reserved.</p>
-    </section>
+    <p>© 2025 Elementor Knight. All rights reserved.</p>
+  </section>
 
-    <!-- سكربتات -->
-    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js" defer></script>
-    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js" defer></script>
-    <script src="scripts.js" defer></script>
+  <!-- GSAP & Scripts -->
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js" defer></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js" defer></script>
+  <script src="scripts.js" defer></script>
 </body>
 </html>
