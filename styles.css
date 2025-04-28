@@ -62,20 +62,48 @@
     font-weight:bold;color:#f9f9f9;
   }
   
-  /* ---------- BUTTON ---------- */
-  .platform-btn{
-    display:inline-flex;justify-content:center;align-items:center;
-    width:clamp(340px,100%,780px);
-    height:120px;margin-top:1.75rem;
-    background:var(--color-primary);color:#fff;font-size:3rem;font-weight:bold;
-    text-decoration:none;border:none;border-radius:12px;cursor:pointer;
+ /* ---------- BUTTON ---------- */
+/* ---------- BUTTON (نسخة مُكبَّرة ومحميّة من تجاوز النص) ---------- */
+.platform-btn{
+    display:flex;                     /* توسيط أفقي + عمودي مضمون */
+    justify-content:center;
+    align-items:center;
+
+    /* يملأ 95٪ من عرض الشاشة حتى حدّ أقصى 900 px */
+    width:clamp(260px, 95%, 900px);
+
+    /* ارتفاع يتكيّف ويصل 140 px كحدّ أقصى */
+    height:clamp(80px, 18vw, 140px);
+
+    margin:2rem auto 0;               /* auto = توسيط أفقي */
+    padding:0 1.5rem;                 /* هامش داخلي يمنع ملامسة الحواف */
+
+    background:var(--color-primary);
+    color:#fff;
+
+    /* خط أكبر ويتقلّص بنعومة */
+    font-size:clamp(1.8rem, 6vw, 3.2rem);
+    font-weight:bold;
+    line-height:1;                    /* يمنع تمدّد عمودي */
+
+    text-decoration:none;
+    white-space:nowrap;               /* يمنع التفاف النص خارج الزر */
+    overflow:hidden;                  /* لو حدث قصٌّ غير متوقع لا يُخرِج المحتوى */
+
+    border:none;
+    border-radius:16px;               /* مظهر محدث */
     box-shadow:0 6px 12px rgba(0,0,0,.4);
+    cursor:pointer;
     transition:transform .25s, box-shadow .25s;
-  }
-  .platform-btn:hover{
-    transform:scale(1.04);
-    box-shadow:0 8px 16px rgba(0,0,0,.5);
-  }
+}
+.platform-btn:hover{
+    transform:scale(1.05);
+    box-shadow:0 8px 18px rgba(0,0,0,.5);
+}
+
+
+  
+  
   
   /* ---------- VIDEO ---------- */
   .video-section{padding:4rem 1rem;text-align:center}

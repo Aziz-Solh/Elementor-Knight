@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Google Play colors -->
+  <defs>
+    <linearGradient id="GP_a" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00A0FF"/>
+      <stop offset=".5" stop-color="#00A0FF"/>
+      <stop offset="1" stop-color="#00A0FF"/>
+    </linearGradient>
+    <linearGradient id="GP_b" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00A0FF"/>
+      <stop offset="1" stop-color="#0081FF"/>
+    </linearGradient>
+    <linearGradient id="GP_c" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFBA00"/>
+      <stop offset="1" stop-color="#FFBA00"/>
+    </linearGradient>
+    <linearGradient id="GP_d" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFBA00"/>
+      <stop offset="1" stop-color="#FFBA00"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left (blue) wing -->
+  <path d="M58.67 25.06C46.29 31.28 38 44.2 38 59.2v393.6c0 15 8.24 28 20.61 34.14l3.26 1.63 179.7-173.39V198.45L61.93 25.42z"
+        fill="url(#GP_a)"/>
+  <!-- Darker blue edge -->
+  <path d="M241.57 285.24 61.93 486.58c3.07 1.54 6.42 2.42 9.94 2.42 5.12 0 10.02-2 13.68-5.51l156.02-150.69z"
+        fill="url(#GP_b)"/>
+  <!-- Right (yellow) wing -->
+  <path d="M443.93 229.37 351.5 165.16l-109.93 104.2 109.93 104.3 92.43-64.31c18.15-12.63 18.15-40.35 0-52.98z"
+        fill="url(#GP_c)"/>
+  <!-- Inner orange edge -->
+  <path d="M241.57 269.36 352.71 165.16l-44.58-30.98c-11.41-7.92-25.13-12.18-39.56-12.18h-27v147.36z"
+        fill="url(#GP_d)"/>
+</svg>
