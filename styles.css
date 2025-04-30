@@ -96,6 +96,15 @@
     cursor:pointer;
     transition:transform .25s, box-shadow .25s;
 }
+.pulse-button {
+  animation: pulse 1.8s infinite;
+}
+
+@keyframes pulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.06); }
+  100% { transform: scale(1); }
+}
 .platform-btn:hover{
     transform:scale(1.05);
     box-shadow:0 8px 18px rgba(0,0,0,.5);
